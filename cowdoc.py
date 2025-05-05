@@ -40,9 +40,8 @@ def diagnosa(gejala_input):
 
 # === User Interface ===
 st.title("🐄 CowDoc 🐄")
-st.markdown("""<h3 style='text-align: center;'>Diagnosa Penyakit pada Ternak Sapi</h3>""", unsafe_allow_html=True)
 
-st.image("sapi.jpg", caption="Sistem Pakar Diagnosa Penyakit Sapi", use_container_width=True)
+st.image("sapi.jpg", use_container_width=True)
 
 st.markdown("""
 <div style="text-align: justify; font-size:16px; padding-top: 10px;">
@@ -52,7 +51,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("---")
-st.write("Silakan pilih gejala yang dialami oleh ternak sapi:")
+st.write("Pilih gejala yang dialami oleh ternak sapi Anda:")
 
 gejala_list = [
     "Nafsu Makan Menurun",
@@ -84,6 +83,7 @@ if st.button("Diagnosa Sekarang"):
 st.markdown("""
 <br><hr>
 <div style="text-align: center; font-size: 14px;">
-    &copy; 2025 CowDoc. Dibuat untuk membantu peternak sapi Indonesia.
+    &copy; 2025 CowDoc. Sistem Pakar Diagnosa Penyakit Pada Hewan Ternak Sapi.
+    Ikhwan Fajar Khatamy (2255061007) Siti Fatiha Diza Rahman (2215061084) Deti Dwi Anugra (2215061058) 
 </div>
 """, unsafe_allow_html=True)
