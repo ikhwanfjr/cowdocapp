@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="CowDoc", layout="centered")
+
 # === Knowledge Base ===
 rules = [
     {
@@ -37,9 +39,8 @@ def diagnosa(gejala_input):
     return None
 
 # === User Interface ===
-st.title("🐄 CowDoc" \
-"Diagnosa Penyakit pada Ternak Sapi")
-st.set_page_config(page_title="CowDoc", layout="centered")
+st.title("🐄 CowDoc 🐄" )
+st.title("Diagnosa Penyakit pada Ternak Sapi")
 
 st.image("sapi.jpg", caption="Sistem Pakar Diagnosa Penyakit Sapi", use_column_width=True)
 
