@@ -39,10 +39,8 @@ def diagnosa(gejala_input):
     return None
 
 # === User Interface ===
-st.markdown("""
-<h1 style='text-align: center;'><strong>CowDoc</strong></h1>
-<h3 style='text-align: center;'>Diagnosa Penyakit pada Ternak Sapi</h3>
-""", unsafe_allow_html=True)
+st.title("🐄 CowDoc 🐄")
+st.markdown("""<h3 style='text-align: center;'>Diagnosa Penyakit pada Ternak Sapi</h3>""", unsafe_allow_html=True)
 
 st.image("sapi.jpg", caption="Sistem Pakar Diagnosa Penyakit Sapi", use_container_width=True)
 
