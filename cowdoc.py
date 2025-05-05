@@ -83,7 +83,7 @@ if st.button("Diagnosa Sekarang"):
 st.markdown("""
 <br><hr>
 <div style="text-align: center; font-size: 14px;">
-    &copy; 2025 CowDoc. Sistem Pakar Diagnosa Penyakit Pada Hewan Ternak Sapi.
+    &copy; 2025 CowDoc. Sistem Pakar Diagnosa Penyakit Pada Hewan Ternak Sapi.<br>
     Ikhwan Fajar Khatamy (2255061007) Siti Fatiha Diza Rahman (2215061084) Deti Dwi Anugra (2215061058) 
 </div>
 """, unsafe_allow_html=True)
