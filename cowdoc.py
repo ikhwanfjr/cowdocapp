@@ -37,8 +37,19 @@ def diagnosa(gejala_input):
     return None
 
 # === User Interface ===
-st.title("🐄 CowDoc: Diagnosa Penyakit pada Ternak Sapi")
+st.set_page_config(page_title="CowDoc", layout="centered")
 
+st.image("https://images.unsplash.com/photo-1577985051168-c40e0d0ac90f", caption="Sistem Pakar Diagnosa Penyakit Sapi", use_column_width=True)
+
+st.markdown("""
+<div style="text-align: justify; font-size:16px; padding-top: 10px;">
+    <strong>CowDoc</strong> adalah sebuah sistem pakar berbasis web yang membantu peternak dalam mendiagnosa penyakit pada ternak sapi berdasarkan gejala yang terlihat. 
+    Aplikasi ini dibangun menggunakan pendekatan rule-based inference untuk mencocokkan gejala yang dipilih dengan basis pengetahuan penyakit yang sudah ditentukan.
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("---")
+st.title("🐄 CowDoc: Diagnosa Penyakit pada Ternak Sapi")
 st.write("Silakan pilih gejala yang dialami oleh ternak sapi:")
 
 gejala_list = [
@@ -66,3 +77,11 @@ if st.button("Diagnosa Sekarang"):
         st.markdown(f"**Solusi:** {hasil['solusi']}")
     else:
         st.warning("Gejala yang dipilih belum cukup untuk menyimpulkan penyakit tertentu. Silakan periksa kembali.")
+
+# === Footer ===
+st.markdown("""
+<br><hr>
+<div style="text-align: center; font-size: 14px;">
+    &copy; 2025 CowDoc. Dibuat untuk membantu peternak sapi Indonesia.
+</div>
+""", unsafe_allow_html=True)
