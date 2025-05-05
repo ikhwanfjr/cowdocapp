@@ -45,9 +45,13 @@ st.image("sapi.jpg", use_container_width=True)
 
 st.markdown("""
 <div style="text-align: justify; font-size:16px; padding-top: 10px;">
-    <strong>CowDoc</strong> adalah sebuah sistem pakar berbasis web yang membantu peternak dalam mendiagnosa penyakit pada ternak sapi berdasarkan gejala yang terlihat. 
-    Aplikasi ini dibangun menggunakan pendekatan rule-based inference untuk mencocokkan gejala yang dipilih dengan basis pengetahuan penyakit yang sudah ditentukan.
-</div>
+    <strong>CowDoc</strong> merupakan sistem pakar berbasis komputer yang dirancang untuk membantu peternak dalam mendiagnosa penyakit pada 
+    ternak sapi secara cepat dan  mandiri berdasarkan gejala klinis yang terlihat. Sistem ini bekerja dengan meniru cara berpikir peternak/dokter 
+    melalui metode inferensi forward chaining. gejala yang di input oleh pengguna akan diproses dan dicocokkan dengan basis pengetahuan yang 
+    telah dirancang oleh para ahli.
+    <br>
+    <br>
+    CowDoc akan menampilkan hasil diagnosis berupa penyakit yang memungkinkan menyerang sapi, disertai dengan saran penanganan awal yang sesuai.
 """, unsafe_allow_html=True)
 
 st.markdown("---")
