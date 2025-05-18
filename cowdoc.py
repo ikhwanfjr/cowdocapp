@@ -5,29 +5,83 @@ st.set_page_config(page_title="CowDoc", layout="centered")
 # === Knowledge Base ===
 rules = [
     {
-        "penyakit": "Antraks",
-        "gejala": ["Nafsu Makan Menurun", "Suhu Tubuh Tinggi", "Luka Pada Kulit", "Lesu dan Tidak Aktif"],
-        "solusi": "Segera hubungi dokter hewan."
+        "penyakit": "Penyakit Antrax (Radang Limpa)",
+        "gejala": ["Demam tinggi, gemetar, berjalan sempoyongan, kondisi lemah, ambruk",
+                   "Kematian Mendadak",
+                   "Kesulitan Bernafas"],
+        "solusi": "Isolasi segera hewan yang terduga terinfeksi, jangan membedah bangkai agar bakteri tidak menyebar, dan segera laporkan ke dinas peternakan."
+    },
+    {
+        "penyakit": "Septichaemia Epizotica (SE/Ngorok)",
+        "gejala": ["Keluar air liur terus menerus",
+                   "Tubuh gemetar",
+                   "Pada kondisi kronis hewan menjadi kurus dan sering batuk, nafsu makan terganggu"],
+        "solusi": "Isolasi hewan yang terinfeksi, berikan antibiotik spektrum luas seperti oksitetrasiklin dan pastikan hewan tidak stress."
+    },
+    {
+        "penyakit": "Surra (Trypanosomiasis/Penyakit Mubeng)",
+        "gejala": ["Anemia, kurus, bulu rontok, busung daerah dagu dan anggota gerak dan akhirnya akan mati",
+                   "Keluar getah radang dari hidung dan mata",
+                   "Jalan sempoyongan, kejang dan berputar putar (mubeng)"],
+        "solusi": "Isolasi, segera beri obat trypanocidal seperti diminazen aceturate, dan kendalikan vektor (lalat penghisap darah) dengan insektisida."
+    },
+    {
+        "penyakit": "Malignant Catharral Fever (MCF) atau Penyakit Ingusan",
+        "gejala": ["Demam tinggi 40 – 41 Derajat Calcius",
+                   "Kondisi badan menurun, lemah dan menjadi kurus",
+                   "Otot-otot menjadi gemetar, berjalan sempoyongan, torticolis dan bersifat agresif",
+                   "Kematian terjadi biasanya antara 4-13 hari setelah timbul gejala penyakit"],
+        "solusi": "Isolasi dan berikan perawatan suportif seperti vitamin dan antiinflamasi."
+    },
+    {
+        "penyakit": "Scabies (Budug, Manga, Kudis Menular)",
+        "gejala": ["Hewan menggosok-gosokkan badan pada dinding kandang serta menggigit-gigit bagian tubuh yang terserang penyakit sehingga terjadi luka-luka dan lecet",
+                   "Kerak pada permukaan kulit berwarna keabuan"],
+        "solusi": "Isolasi, bersihkan kandang dan semprot dengan desinfektan/insektisida, dan mandikan hewan dengan larutan obat anti-kutu."
+    },
+    {
+        "penyakit": "Bovine Ephemeral Fever (BEF / Demam Tiga hari)",
+        "gejala": ["Kelemahan anggota gerak sampai tidak sanggup berdiri",
+                   "Keluar sedikit cairan dari mata dan hidung",
+                   "Pada sapi menyusui, produksi air susu turun atau terhenti sama sekali"],
+        "solusi": "Berikan antiinflamasi dan vitamin, serta cukup air minum."
+    },
+    {
+        "penyakit": "Helminthiasis (Cacingan)",
+        "gejala": ["Badan Kurus",
+                   "Bulu kusam dan berdiri",
+                   "Diare atau bahkan sembelit"],
+        "solusi": "Berikan obat cacing seperti albendazole atau ivermectin, serta bersihkan kandang."
+    },
+    {
+        "penyakit": "Brucellosis (Keluron Menular)",
+        "gejala": ["Pada sapi betina gejala keguguran, biasanya terjadi pada kebuntingan 5 - 8 bulan, kadang diikuti dengan kemajiran. Pada ternak jantan terjadi kebengkakan pada testes dan persendian lutut",
+                   "Perubahan pasca mati yang terlihat adalah penebalan pada plasenta dengan bercak-bercak pada permukaan lapisan chorion. cairan janin terlihat keruh berwarna kuning coklat dan kadang-kadang bercampur nanah. Pada ternak jantan ditemukan proses pernanahan pada testis yang dapat diikuti dengan nekrose"],
+        "solusi": "Isolasi, jangan sentuh cairan atau jaringan abortus tanpa pelindung, dan segera laporkan ke dinas peternakan."
+    },
+    {
+        "penyakit": "Mastitis (Radang Ambing)",
+        "gejala": ["Kebengkakan ambing",
+                   "Air susu berubah sifat, menjadi pecah, bercampur endapan atau jonjot fibrin"],
+        "solusi": "Lakukan pemerahan rutin pada ambing yang sakit, cuci dan desinfeksi ambing sebelum dan sesudah pemerahan, dan gunakan antibiotik intramammary."
+    },
+    {
+        "penyakit": "Pink Eye (Penyakit Mata)",
+        "gejala": ["Mata berair, kemerahan pada bagian mata yang putih dan kelopaknya",
+                   "Selaput bening mata/kornea menjadi keruh"],
+        "solusi": "Isolasi, bersihkan mata dengan larutan salin steril, dan berikan tetes mata antibiotik atau salep mata."
     },
     {
         "penyakit": "Penyakit Mulut dan Kuku (PMK)",
-        "gejala": ["Diare", "Luka Pada Kulit", "Perut Kembung"],
-        "solusi": "Cuci luka, hindari kontak dengan ternak lain."
-    },
-    {
-        "penyakit": "Pneumonia",
-        "gejala": ["Nafsu Makan Menurun", "Suhu Tubuh Tinggi", "Keluarnya Lendir dari Hidung", "Batuk"],
-        "solusi": "Isolasi, beri antibiotik dan vitamin."
-    },
-    {
-        "penyakit": "Diare Akut",
-        "gejala": ["Nafsu Makan Menurun", "Suhu Tubuh Tinggi", "Diare"],
-        "solusi": "Berikan oralit, dan jaga kebersihan kandang."
-    },
-    {
-        "penyakit": "Mastitis",
-        "gejala": ["Produksi Susu Menurun", "Lesu dan Tidak Aktif", "Suhu Tubuh Tinggi"],
-        "solusi": "Periksa ambing, kompres hangat, beri antibiotik."
+        "gejala": ["Demam tinggi 40 – 41 Derajat Calcius",
+                   "Mengalami anorexia (tidak nafsu makan)",
+                   "Penurunan produksi susu yang drastis pada sapi perah untuk 2-3 hari",
+                   "Saliva terlihat menggantung, air liur berbusa di lantai kandang",
+                   "Hewan lebih sering berbaring",
+                   "Luka pada kuku dan kukunya lepas",
+                   "Menggeretakan gigi, menggosokkan mulut, leleran mulut, suka menendangkan kaki",
+                   "Keluar air liur berlebihan disertai busa"],
+        "solusi": "Isolasi, disinfeksi kandang, berikan perawatan suportif, dan segera lapor ke dinas peternakan."
     }
 ]
 
@@ -58,16 +112,40 @@ st.markdown("---")
 st.write("Pilih gejala yang dialami oleh ternak sapi Anda:")
 
 gejala_list = [
-    "Nafsu Makan Menurun",
-    "Suhu Tubuh Tinggi",
-    "Diare",
-    "Keluarnya Lendir dari Hidung",
-    "Batuk",
-    "Luka Pada Kulit",
-    "Lesu dan Tidak Aktif",
-    "Mata Berair",
-    "Perut Kembung",
-    "Produksi Susu Menurun"
+    "Demam tinggi, gemetar, berjalan sempoyongan, kondisi lemah, ambruk",
+    "Kematian Mendadak",
+    "Kesulitan Bernafas",
+    "Keluar air liur terus menerus",
+    "Tubuh gemetar",
+    "Pada kondisi kronis hewan menjadi kurus dan sering batuk, nafsu makan terganggu",
+    "Anemia, kurus, bulu rontok, busung daerah dagu dan anggota gerak dan akhirnya akan mati",
+    "Keluar getah radang dari hidung dan mata",
+    "Jalan sempoyongan, kejang dan berputar putar (mubeng)",
+    "Demam tinggi 40 – 41 Derajat Calcius",
+    "Kondisi badan menurun, lemah dan menjadi kurus",
+    "Otot-otot menjadi gemetar, berjalan sempoyongan, torticolis dan bersifat agresif",
+    "Kematian terjadi biasanya antara 4-13 hari setelah timbul gejala penyakit",
+    "Hewan menggosok-gosokkan badan pada dinding kandang serta menggigit-gigit bagian tubuh yang terserang penyakit sehingga terjadi luka-luka dan lecet",
+    "Kerak pada permukaan kulit berwarna keabuan",
+    "Kelemahan anggota gerak sampai tidak sanggup berdiri",
+    "Keluar sedikit cairan dari mata dan hidung",
+    "Pada sapi menyusui, produksi air susu turun atau terhenti sama sekali",
+    "Badan Kurus",
+    "Bulu kusam dan berdiri",
+    "Diare atau bahkan sembelit",
+    "Mata berair, kemerahan pada bagian mata yang putih dan kelopaknya",
+    "Selaput bening mata/kornea menjadi keruh",
+    "Kebengkakan ambing",
+    "Air susu berubah sifat, menjadi pecah, bercampur endapan atau jonjot fibrin",
+    "Pada sapi betina gejala keguguran, biasanya terjadi pada kebuntingan 5 - 8 bulan, kadang diikuti dengan kemajiran. Pada ternak jantan terjadi kebengkakan pada testes dan persendian lutut",
+    "Perubahan pasca mati yang terlihat adalah penebalan pada plasenta dengan bercak-bercak pada permukaan lapisan chorion. cairan janin terlihat keruh berwarna kuning coklat dan kadang-kadang bercampur nanah. Pada ternak jantan ditemukan proses pernanahan pada testis yang dapat diikuti dengan nekrose",
+    "Mengalami anorexia (tidak nafsu makan)",
+    "Penurunan produksi susu yang drastis pada sapi perah untuk 2-3 hari",
+    "Saliva terlihat menggantung, air liur berbusa di lantai kandang",
+    "Hewan lebih sering berbaring",
+    "Luka pada kuku dan kukunya lepas",
+    "Menggeretakan gigi, menggosokkan mulut, leleran mulut, suka menendangkan kaki",
+    "Keluar air liur berlebihan disertai busa"
 ]
 
 selected_gejala = []
