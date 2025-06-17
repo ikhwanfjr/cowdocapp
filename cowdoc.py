@@ -9,7 +9,7 @@ rules = [
         "gejala": ["Demam tinggi, gemetar, berjalan sempoyongan, kondisi lemah, ambruk",
                    "Kematian Mendadak",
                    "Kesulitan Bernafas"],
-        "gambar": "sapi.jpg",
+        "gambar": "antrax.jpg",
         "solusi": "Isolasi segera hewan yang terduga terinfeksi, jangan membedah bangkai agar bakteri tidak menyebar, dan segera laporkan ke dinas peternakan."
     },
     {
@@ -17,7 +17,7 @@ rules = [
         "gejala": ["Keluar air liur terus menerus",
                    "Tubuh gemetar",
                    "Pada kondisi kronis hewan menjadi kurus dan sering batuk, nafsu makan terganggu"],
-        "gambar": "sapi.jpg",
+        "gambar": "sapi SE.jpg",
         "solusi": "Isolasi hewan yang terinfeksi, berikan antibiotik spektrum luas seperti oksitetrasiklin dan pastikan hewan tidak stress."
     },
     {
@@ -25,7 +25,7 @@ rules = [
         "gejala": ["Anemia, kurus, bulu rontok, busung daerah dagu dan anggota gerak dan akhirnya akan mati",
                    "Keluar getah radang dari hidung dan mata",
                    "Jalan sempoyongan, kejang dan berputar putar (mubeng)"],
-        "gambar": "sapi.jpg",
+        "gambar": "surra.jpg",
         "solusi": "Isolasi, segera beri obat trypanocidal seperti diminazen aceturate, dan kendalikan vektor (lalat penghisap darah) dengan insektisida."
     },
     {
@@ -34,14 +34,14 @@ rules = [
                    "Kondisi badan menurun, lemah dan menjadi kurus",
                    "Otot-otot menjadi gemetar, berjalan sempoyongan, torticolis dan bersifat agresif",
                    "Kematian terjadi biasanya antara 4-13 hari setelah timbul gejala penyakit"],
-        "gambar": "sapi.jpg",
+        "gambar": "ingusan.jpg",
         "solusi": "Isolasi dan berikan perawatan suportif seperti vitamin dan antiinflamasi."
     },
     {
         "penyakit": "Scabies (Budug, Manga, Kudis Menular)",
         "gejala": ["Hewan menggosok-gosokkan badan pada dinding kandang serta menggigit-gigit bagian tubuh yang terserang penyakit sehingga terjadi luka-luka dan lecet",
                    "Kerak pada permukaan kulit berwarna keabuan"],
-        "gambar": "sapi.jpg",
+        "gambar": "scabies.jpg",
         "solusi": "Isolasi, bersihkan kandang dan semprot dengan desinfektan/insektisida, dan mandikan hewan dengan larutan obat anti-kutu."
     },
     {
@@ -49,7 +49,7 @@ rules = [
         "gejala": ["Kelemahan anggota gerak sampai tidak sanggup berdiri",
                    "Keluar sedikit cairan dari mata dan hidung",
                    "Pada sapi menyusui, produksi air susu turun atau terhenti sama sekali"],
-        "gambar": "sapi.jpg",
+        "gambar": "BEF.jpg",
         "solusi": "Berikan antiinflamasi dan vitamin, serta cukup air minum."
     },
     {
@@ -57,28 +57,28 @@ rules = [
         "gejala": ["Badan Kurus",
                    "Bulu kusam dan berdiri",
                    "Diare atau bahkan sembelit"],
-        "gambar": "sapi.jpg",
+        "gambar": "cacingan.jpg",
         "solusi": "Berikan obat cacing seperti albendazole atau ivermectin, serta bersihkan kandang."
     },
     {
         "penyakit": "Brucellosis (Keluron Menular)",
         "gejala": ["Pada sapi betina gejala keguguran, biasanya terjadi pada kebuntingan 5 - 8 bulan, kadang diikuti dengan kemajiran. Pada ternak jantan terjadi kebengkakan pada testes dan persendian lutut",
                    "Perubahan pasca mati yang terlihat adalah penebalan pada plasenta dengan bercak-bercak pada permukaan lapisan chorion. cairan janin terlihat keruh berwarna kuning coklat dan kadang-kadang bercampur nanah. Pada ternak jantan ditemukan proses pernanahan pada testis yang dapat diikuti dengan nekrose"],
-        "gambar": "sapi.jpg",
+        "gambar": "Brucellosis.jpg",
         "solusi": "Isolasi, jangan sentuh cairan atau jaringan abortus tanpa pelindung, dan segera laporkan ke dinas peternakan."
     },
     {
         "penyakit": "Mastitis (Radang Ambing)",
         "gejala": ["Kebengkakan ambing",
                    "Air susu berubah sifat, menjadi pecah, bercampur endapan atau jonjot fibrin"],
-        "gambar": "sapi.jpg",
+        "gambar": "mastitis.jpg",
         "solusi": "Lakukan pemerahan rutin pada ambing yang sakit, cuci dan desinfeksi ambing sebelum dan sesudah pemerahan, dan gunakan antibiotik intramammary."
     },
     {
         "penyakit": "Pink Eye (Penyakit Mata)",
         "gejala": ["Mata berair, kemerahan pada bagian mata yang putih dan kelopaknya",
                    "Selaput bening mata/kornea menjadi keruh"],
-        "gambar": "sapi.jpg",
+        "gambar": "pinkeye.jpg",
         "solusi": "Isolasi, bersihkan mata dengan larutan salin steril, dan berikan tetes mata antibiotik atau salep mata."
     },
     {
@@ -91,7 +91,7 @@ rules = [
                    "Luka pada kuku dan kukunya lepas",
                    "Menggeretakan gigi, menggosokkan mulut, leleran mulut, suka menendangkan kaki",
                    "Keluar air liur berlebihan disertai busa"],
-        "gambar": "sapi.jpg",
+        "gambar": "pmk.jpg",
         "solusi": "Isolasi, disinfeksi kandang, berikan perawatan suportif, dan segera lapor ke dinas peternakan."
     }
 ]
@@ -169,7 +169,7 @@ if st.button("Diagnosa Sekarang"):
     hasil = diagnosa(selected_gejala)
     if hasil:
         st.success(f"### Penyakit: {hasil['penyakit']}")
-        st.image(hasil["gambar"], use_column_width=True)
+        st.image(hasil["gambar"], use_container_width=True)
         st.markdown(f"**Solusi:** {hasil['solusi']}")
     else:
         st.warning("Gejala yang dipilih belum cukup untuk menyimpulkan penyakit tertentu. Silakan periksa kembali.")
