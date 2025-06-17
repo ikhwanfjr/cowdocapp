@@ -149,10 +149,16 @@ gejala_list = [
 ]
 
 selected_gejala = []
-for gejala in gejala_list:
-    if st.checkbox(gejala):
-        selected_gejala.append(gejala)
-
+for kode, pertanyaan in gejala_data:
+    st.markdown("---")
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        st.image(f"images/{kode.lower()}.jpg", width=100, caption=kode)  # siapkan folder 'images/' berisi g01.jpg dst
+    with col2:
+        jawab = st.radio(f"{pertanyaan}", ["Tidak", "Ya"], key=kode)
+        if jawab == "Ya":
+            selected_gejala.append(pertanyaan)
+            
 if st.button("Diagnosa Sekarang"):
     hasil = diagnosa(selected_gejala)
     if hasil:
