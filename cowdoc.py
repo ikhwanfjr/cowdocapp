@@ -122,7 +122,7 @@ gejala_list = [
     ("G08", "Keluar getah radang dari hidung dan mata"),
     ("G09", "Jalan sempoyongan, kejang dan berputar putar (mubeng)"),
     ("G10", "Demam tinggi 40 – 41 Derajat Calcius"),
-    ("G11", "G01", "Kondisi badan menurun, lemah dan menjadi kurus"),
+    ("G11", "Kondisi badan menurun, lemah dan menjadi kurus"),
     ("G12", "Otot-otot menjadi gemetar, berjalan sempoyongan, torticolis dan bersifat agresif"),
     ("G13", "Kematian terjadi biasanya antara 4-13 hari setelah timbul gejala penyakit"),
     ("G14", "Hewan menggosok-gosokkan badan pada dinding kandang serta menggigit-gigit bagian tubuh yang terserang penyakit sehingga terjadi luka-luka dan lecet"),
