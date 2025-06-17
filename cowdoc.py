@@ -160,7 +160,7 @@ gejala_list = [
 ]
 
 selected_gejala = []
-for kode, pertanyaan in gejala_data:
+for kode, pertanyaan in gejala_list:
     jawab = st.radio(pertanyaan, ["Tidak", "Ya"], key=kode)
     if jawab == "Ya":
         selected_gejala.append(pertanyaan)
