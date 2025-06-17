@@ -149,7 +149,7 @@ gejala_list = [
 ]
 
 selected_gejala = []
-for kode, pertanyaan in gejala_data:
+for kode, pertanyaan in gejala_list:
     st.markdown("---")
     col1, col2 = st.columns([1, 4])
     with col1:
